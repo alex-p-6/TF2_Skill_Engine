@@ -141,9 +141,9 @@ with open('team_skill_list.csv', 'w', newline='') as csvfile:
     spamwriter.writerow(["Tournament_Team_ID","Total_Ordinal_Skill"])
     for a in team_skill_list:
         team_skill = 0
-        spamwriter.writerow([a, team_skill_list.get(a)[1].ordinal() +
+        spamwriter.writerow([a, team_skill_list.get(a)[0].ordinal() +
+                             team_skill_list.get(a)[1].ordinal() +
                              team_skill_list.get(a)[2].ordinal() +
                              team_skill_list.get(a)[3].ordinal() +
                              team_skill_list.get(a)[4].ordinal() +
-                             team_skill_list.get(a)[5].ordinal() +
-                             team_skill_list.get(a)[1].ordinal() ])
+                             team_skill_list.get(a)[5].ordinal() ])
